@@ -1,0 +1,298 @@
+html{line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,footer,header,nav,section{display:block}h1{font-size:2em;margin:.67em 0}figcaption,figure,main{display:block}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}pre{font-family:monospace,monospace;font-size:1em}a{background-color:transparent;-webkit-text-decoration-skip:objects}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:inherit}b,strong{font-weight:bolder}code,kbd,samp{font-family:monospace,monospace;font-size:1em}dfn{font-style:italic}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}audio,video{display:inline-block}audio:not([controls]){display:none;height:0}img{border-style:none}svg:not(:root){overflow:hidden}button,input,optgroup,select,textarea{font-family:sans-serif;font-size:100%;line-height:1.15;margin:0}button,input{overflow:visible}button,select{text-transform:none}button,html [type=button],[type=reset],[type=submit]{-webkit-appearance:button}button::-moz-focus-inner,[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner{border-style:none;padding:0}button:-moz-focusring,[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring{outline:1px dotted ButtonText}fieldset{padding:.35em .75em .625em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}progress{display:inline-block;vertical-align:baseline}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}details,menu{display:block}summary{display:list-item}canvas{display:inline-block}template{display:none}[hidden]{display:none}
+
+.clearfix:after {visibility: hidden; display: block; font-size: 0; content: ''; clear: both; height: 0; }
+
+html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;}
+
+*, *:before, *:after {box-sizing: inherit}
+
+.sr-only { position: absolute; width: 1px; height: 1px; margin: -1px; border: 0; padding: 0; white-space: nowrap; clip-path: inset(100%); clip: rect(0 0 0 0); overflow: hidden;}
+
+/* set overall margins and padding and font and logo*/
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Raleway', sans-serif;
+}
+
+body .logo {
+    font-size: 38px;
+    color:#005769;
+    font-weight:700;
+    padding-left: 5%;
+}
+
+a:hover,
+footer a:hover {
+    color:#16D6D1;
+}
+
+/* Nav and button styling */
+
+nav {
+    display:flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.navList {
+    display:flex;
+    justify-content: space-around;
+    align-items:center;
+    list-style: none;
+    width:50%;
+    height:50%;
+    padding:25px;
+}
+
+ul a {
+    font-size:19px;
+    color:#333333;
+    text-decoration: none; 
+    text-transform: uppercase;
+    font-weight:700;
+
+}
+
+.Button {
+    background-color:#16D6D1;
+    padding:1rem;
+    border-radius:10px;
+}
+
+/* Header without Nav */
+
+.mainHeader {
+    background-image: url(assets/image-main.jpeg);
+    height:700px;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.Heading {
+    width: 800px;
+    padding: 5%;
+}
+
+h1 {
+    font-size:68px;
+    color:#333333;
+    font-weight:700;
+}
+
+/* Main section styling */
+
+h2 {
+    font-size:22px;
+    color:#777777;
+    text-transform: uppercase;
+    margin-top: 3%;
+}
+
+p {
+    font-size: 39px;
+    color:#333333;
+    font-weight:700;
+}
+
+div a {
+    font-size:19px;
+    color:#333333;
+    font-weight:700;
+    text-transform: uppercase;
+}
+
+/* Set image dimensions to 100% of parent */
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+/***first main section styling***/
+
+/* Van picture box size and order*/
+
+.van {
+    height:600px;
+    width:350px;
+    order:1;
+}
+
+/* Boat picture box size and order*/
+
+.boat {
+    order:1;
+    height:300px;
+    width:750px;
+}  
+
+/* feature1 header box style*/
+
+.feature1 {
+    background-color:#F6F8FA;
+    height:300px;
+    width:750px;
+    text-align:center;
+    order:2;
+}
+
+/* feature1 header box and boat picture together as flex box */
+
+.box1Header {
+    width:750px;
+    display:flex;
+    flex-wrap:wrap;
+    order:2;
+}
+
+/* All box1 items together as one flex box */
+
+#box1 {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 5% auto;
+}
+
+/***second main section styling***/
+
+/* lake picture box size and order*/
+
+.lake {
+    height:300px;
+    width:750px;
+    order:1;
+}
+
+/* cliff picture box size and order*/
+
+.cliff {
+    height:600px;
+    width:350px;
+    order:2;
+
+}
+
+/* feature2 header box size and order */
+
+.feature2 {
+    background-color:#F6F8FA;
+    height:300px;
+    width:750px;
+    text-align:center;
+    order:2;
+}
+
+/* feature2 header and lake together as flex box */
+
+.box2Header {
+    width:750px;
+    display:flex;
+    flex-direction:column;
+    order:1;
+
+}
+
+/* All box2 items together as one flex box */
+
+#box2 {
+    margin: 5% auto;
+    display:flex;
+    justify-content: space-evenly;
+
+}
+
+/***third main section styling***/
+
+.greek {
+    width:550px;
+    height:550px;
+
+}
+
+.vacation {
+    width:550px;
+    height:550px;
+}
+
+
+#box3 {
+    margin: 5% auto;
+    display:flex;
+    justify-content: space-evenly;
+
+}
+
+/*** Footer styling ***/
+
+footer .logo {
+    padding-left:5%;
+    margin:0;
+
+}
+
+/* Set background colour */
+
+footer {
+    background-color:#F6F8FA;
+    padding:0;
+}
+
+/* Copyright and extra text style */
+
+.copyright {
+    padding-left: 3%;
+    font-size: 20px;
+    font-weight: 500;
+    color:#777777;
+    margin:0;
+}
+
+.footerExtra {
+    padding: 5px 0 3% 3%;
+    font-size: 20px;
+    font-weight: 500;
+    color:#777777;
+    margin:0;
+}
+.footerExtra a {
+    text-decoration: none;
+    color:#333333;
+}
+
+/* List of items and spacing */
+
+.footerList {
+    margin:0 5% 0 25%;
+    padding-top:1%;
+    list-style: none;
+    height:100px;
+    width:300px;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer li {
+    padding-bottom:20%;
+    padding-right: 35px;
+}
+
+/* Container and flex items */
+
+.footerBox {
+    padding-top:4%;
+    height: 30vh;
+    display:flex;
+    align-items: flex-start;
+}
+
+.footerText {
+    margin: 0 10% 0 0;
+    padding-top:1%;
+    font-size:20px;
+    color:#777777;
+    font-weight:500;
+}
